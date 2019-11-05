@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <EditText
+            android:id="@+id/editTextCarLoanCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/app_name"
+            android:inputType="textPersonName"
+            android:text="@string/app_name" />
+
+        <EditText
+            android:id="@+id/editTextCarPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/car_price"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/editTextDownPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/down_payment"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/editTextLoanPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/loan_period"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/editTextInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/interest_rate"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textViewCarLoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/car_loan" />
+
+        <TextView
+            android:id="@+id/textViewInterest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/interest" />
+
+        <TextView
+            android:id="@+id/textViewMonthlyRepayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/monthly_repayment" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCalculate"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/calculate" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="50dp"
+                android:onClick="reset"
+                android:text="@string/reset" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
